@@ -17,6 +17,8 @@
 
   <br>
   <script type="text/javascript">
+    var offset = 0
+
     function findTimezone() {
       var timezones = document.getElementsByName("timezone");
       var value = timezones[0].value;
@@ -25,6 +27,25 @@
         if (timezones[i].checked == true) {
           var value = timezones[i].value;
           document.getElementById("result").innerHTML = value;
+          switch (value) {
+            case "EST":
+              offset = 0;
+              break;
+            case "CST":
+              offset = -1;
+              break;
+            case "MST":
+              offset = -2;
+              break;
+            case "PST":
+              offset = -3;
+              break;
+            case "AST":
+              offset = -4;
+              break;
+            case "HST":
+              offset = -5;
+          }
         }
       }
     }
@@ -32,7 +53,7 @@
     function findRealTime() {
       var today = new Date();
       var day = today.getHours();
-      var hour = today.getHours();
+      var hour = today.getHours() + offset;
       var minute = today.getMinutes();
       var second = today.getSeconds();
       /*  console.log(today);
