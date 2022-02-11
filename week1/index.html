@@ -4,8 +4,9 @@
 <html>
 
 <body>
-  <title>Hello World!</title>
-
+  <div class="">
+    <p id="clock"> </p>
+  </div>
   <input type="radio" name="timezone" value="EST"> Eastern Standard Time <br>
   <input type="radio" name="timezone" value="CST"> Central Standard Time <br>
   <input type="radio" name="timezone" value="MST"> Mountain Standard Time <br>
@@ -27,6 +28,27 @@
         }
       }
     }
+
+    function findRealTime() {
+      var today = new Date();
+      var day = today.getHours();
+      var hour = today.getHours();
+      var minute = today.getMinutes();
+      var second = today.getSeconds();
+      /*  console.log(today);
+          console.log(hour);
+          console.log(minute);
+          console.log(second);
+      */
+      if (hour - 12 >= 12) {
+        var session = "PM";
+      } else {
+        var session = "AM";
+      }
+      var time = hour + ":" + minute + ":" + second + session;
+      document.getElementById("clock").innerHTML = time;
+    }
+    setInterval(findRealTime, 1000);
   </script>
   <form class="" action="index.html" method="post">
     <button type="button" value="Submit" onclick="findTimezone()"> Submit </button>
