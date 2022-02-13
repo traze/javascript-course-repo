@@ -9,22 +9,27 @@
 
 <body>
   <div>
-    <h4> Select Timezone: </h4>
-    <input type="radio" name="timezone" value="EST"> Eastern Standard Time <br>
-    <input type="radio" name="timezone" value="CST"> Central Standard Time <br>
-    <input type="radio" name="timezone" value="MST"> Mountain Standard Time <br>
-    <input type="radio" name="timezone" value="PST"> Pacific Standard Time <br>
-    <input type="radio" name="timezone" value="AST"> Alaska Standard Time <br>
-    <input type="radio" name="timezone" value="HST"> Hawaii-Aleutian Standard Time <br>
-    <br>
-    <form class="" action="index.html" method="post">
-      <button type="button" value="Submit" onclick="findTimezone()"> Submit </button>
-    </form>
-    <div class="">
-      <p id="result"> </p>
+    <h3 class="tzTitle"> Select Timezone: </h3>
+    <div class="timezone">
+      <div>
+        <input type="radio" name="timezone" value="EST"> Eastern Standard Time <br>
+        <input type="radio" name="timezone" value="CST"> Central Standard <br>
+        <input type="radio" name="timezone" value="MST"> Mountain Standard <br>
+        <input type="radio" name="timezone" value="PST"> Pacific Standard <br>
+        <input type="radio" name="timezone" value="AST"> Alaska Standard <br>
+        <input type="radio" name="timezone" value="HST"> Hawaii-Aleutian Standard <br>
+      </div>
+      <br>
+      <form class="" action="index.html" method="post">
+        <button type="button" value="Submit" onclick="findTimezone()"> Submit </button>
+      </form>
+      <div class="">
+        <p id="result"> </p>
+      </div>
     </div>
   </div>
-  <div class="clock" id="clock">
+  <div class="clock">
+    <p id="clock"> </p>
   </div>
   <script type="text/javascript">
     var offset = 0
