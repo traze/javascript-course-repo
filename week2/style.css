@@ -1,8 +1,23 @@
-body{
-display: flex;
-justify-content: center;
-align-items: center;
-background: #967BB6;
-min-height: 100vh;
-font-family: "Trebuchet MS", Verdana, Geneva, Tahoma, sans-serif;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #9b59b6;
+  min-height: 100vh;
+  font-family: "Trebuchet MS", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.clock {
+  display: flex;
+  width: 500px;
+  height: 200px;
+  font-size: 90px;
+  align-items: center;
+  justify-content: center;
+  background-color: #DAF7A6;
+  border: #76448a;
+  margin-left: 50px;
+  box-shadow: 0 0 30px rgba(118, 68, 138, .1),
+    0 20px 20px rgba(136, 78, 160, .1),
+    0 0 0 4px rgba(255, 255, 255, 1);
 }

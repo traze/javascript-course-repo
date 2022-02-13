@@ -2,20 +2,30 @@
 <meta charset="UTF-8">
 
 <html>
+
 <head>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="">
+  <div>
     <h4> Select Timezone: </h4>
-    <p id="clock"> </p>
-  <input type="radio" name="timezone" value="EST"> Eastern Standard Time <br>
-  <input type="radio" name="timezone" value="CST"> Central Standard Time <br>
-  <input type="radio" name="timezone" value="MST"> Mountain Standard Time <br>
-  <input type="radio" name="timezone" value="PST"> Pacific Standard Time <br>
-  <input type="radio" name="timezone" value="AST"> Alaska Standard Time <br>
-  <input type="radio" name="timezone" value="HST"> Hawaii-Aleutian Standard Time <br>
-  <br>
+    <input type="radio" name="timezone" value="EST"> Eastern Standard Time <br>
+    <input type="radio" name="timezone" value="CST"> Central Standard Time <br>
+    <input type="radio" name="timezone" value="MST"> Mountain Standard Time <br>
+    <input type="radio" name="timezone" value="PST"> Pacific Standard Time <br>
+    <input type="radio" name="timezone" value="AST"> Alaska Standard Time <br>
+    <input type="radio" name="timezone" value="HST"> Hawaii-Aleutian Standard Time <br>
+    <br>
+    <form class="" action="index.html" method="post">
+      <button type="button" value="Submit" onclick="findTimezone()"> Submit </button>
+    </form>
+    <div class="">
+      <p id="result"> </p>
+    </div>
+  </div>
+  <div class="clock" id="clock">
+  </div>
   <script type="text/javascript">
     var offset = 0
 
@@ -71,15 +81,7 @@
     }
     setInterval(findRealTime, 1000);
   </script>
-  <form class="" action="index.html" method="post">
-    <button type="button" value="Submit" onclick="findTimezone()"> Submit </button>
-  </form>
 
-  <div class="">
-    <p id="result">
-
-    </p>
-  </div>
 
 </body>
 
