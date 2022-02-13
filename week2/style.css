@@ -11,13 +11,24 @@ body {
   display: flex;
   width: 500px;
   height: 200px;
-  font-size: 90px;
+  font-size: 75px;
   align-items: center;
   justify-content: center;
   background-color: #DAF7A6;
   border: #76448a;
   margin-left: 50px;
+  padding: 1px;
   box-shadow: 0 0 30px rgba(118, 68, 138, .1),
     0 20px 20px rgba(136, 78, 160, .1),
     0 0 0 4px rgba(255, 255, 255, 1);
+}
+
+.timezone {
+  font-size: 18px;
+  color: #daf7a6;
+  font-family: sans-serif;
+}
+
+.tzTitle {
+  color: #daf7a6;
 }
