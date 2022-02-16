@@ -1,33 +1,37 @@
 <!DOCTYPE html>
-  <html lang="en" dir="ltr">
+<html lang="en" dir="ltr">
 
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js">
-    </script>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js">
+  </script>
 
-    <title>"Select Timezone: </title>
-  </head>
+  <title>"Select Timezone: </title>
+</head>
 
-  <body>
+<body>
+  <div>
+    <h4> Select Timezone: </h4>
     <div>
-      <h4> Select Timezone: </h4>
-    <div>
-      <input type="radio" name="timezone" value="EST"> Eastern Standard Time <br>
-      <input type="radio" name="timezone" value="CST"> Central Standard <br>
-      <input type="radio" name="timezone" value="MST"> Mountain Standard <br>
-      <input type="radio" name="timezone" value="PST"> Pacific Standard <br>
-      <input type="radio" name="timezone" value="AST"> Alaska Standard <br>
-      <input type="radio" name="timezone" value="HST"> Hawaii-Aleutian Standard <br>
+      <div>
+        <input type="radio" name="timezone" value="EST"> Eastern Standard Time <br>
+        <input type="radio" name="timezone" value="CST"> Central Standard <br>
+        <input type="radio" name="timezone" value="MST"> Mountain Standard <br>
+        <input type="radio" name="timezone" value="PST"> Pacific Standard <br>
+        <input type="radio" name="timezone" value="AST"> Alaska Standard <br>
+        <input type="radio" name="timezone" value="HST"> Hawaii-Aleutian Standard <br>
+      </div>
+      <br>
+      <form class="" action="index.html" method="post">
+        <button type="button" value="Submit" onclick="findTimezone()"> Submit </button>
+      </form>
+      <div class="">
+        <p id="result"> </p>
+      </div>
     </div>
-    <br>
-    <form class="" action="index.html" method="post">
-      <button type="button" value="Submit" onclick="findTimezone()"> Submit </button>
-    </form>
-    <div class="">
-      <p id="result"> </p>
-    </div>
-  </body>
+  </div>
+  <div class="clock"> </div>
+</body>
 
-  </html>
+</html>

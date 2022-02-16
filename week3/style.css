@@ -16,3 +16,25 @@ body {
 .tzTitle {
   color: #daf7a6;
 }
+
+.clock {
+  height: 300px;
+  width: 300px;
+  margin-left: 50px;
+  background: #daf7a6;
+  border-radius: 50%;
+  position: relative;
+  border: solid black 10px;
+}
+
+.clock::after {
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
