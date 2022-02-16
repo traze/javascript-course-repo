@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #9b59b6;
+  min-height: 100vh;
+  font-family: "Trebuchet MS", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.timezone {
+  font-size: 18px;
+  color: #daf7a6;
+  font-family: sans-serif;
+}
+
+.tzTitle {
+  color: #daf7a6;
+}
